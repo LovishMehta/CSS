@@ -1,0 +1,67 @@
+What is CSS?
+ CSS stands for Cascading Style Sheets
+ CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+ CSS saves a lot of work. It can control the layout of multiple web pages all at once
+ External stylesheets are stored in CSS files
+ 
+ We can write CSS in 3 ways
+ 1) External style sheet : write in a seperate file and link it to HTML file. Write link tag <link rel="stylesheet" href="your_style_file.css"> inside head tag
+ 2) Internal style sheet:  use style tag <style> h1{color:blue} </style> inside head tag and write css. i.e. embedding css in html file itself
+ 3) Inline style: in this also we write inside the html file only. So here we mention style as an attribute of any tag
+               ex: <p style="color:blue">
+               
+ CSS syntax:
+ selctor{ property : value } e.g. -> p{color:blue}
+ 
+ Selector
+ ElementSelector is used to specify an HTML element or group of HTML elements on which properties are applied.
+ Ways to specify an element selector
+ 1)Type Selector
+  -> Uses Tag name to select element -> p{ property : value }
+
+2)ID selector
+  -> Used Id value to select elements -> #Id{ property : value }
+      e.g. <p id="p1"> then in css we will write #p1{ property : value }. # tells that p1 is ID attribute of an element.
+
+3)Class Selector -> .className{ property : value }
+  -> Uses Class value to select elemets
+     e.g. <p class ="c1"> then in css we will write .c1{ property : value }. "." tells that c1 is a class attribute of an element.
+     
+Note: To make group of some particular elements we use class attribute. We give same class name to all those
+      elements of html which we want to group together.
+     
+4)Universal Selector -> *{ property : value }
+   *{ color : blue} this will make all the element value as blue. Used to select all the elements at once
+ 
+5)Attribute Selector 
+   -> Uses attribute value to select element.
+      e.g. element is <a href="www.any.com">. Now to select href attribute we will write a[href="www.any.com"]
+ 
+6)Pseudo Class Selector
+   -> Used to style states of element 
+      syntax: selector: pseudo-class{ property: value; }
+     Example
+       Style an element when a user mouses over it -> a:hover{ color: pink }
+       Style visited and unvisited links differently -> p:visited{ color: purple }
+       Style an element when it gets focus
+ 
+7)Pseudo element Selector
+  -> A CSS pseudo-element is used to style specified parts of an element.
+     syntax: selector::pseudo-element{  property: value; }
+     For example, it can be used to: 
+       Style the first letter, or line, of an element -> p::first-line{ color:pink }
+       Insert content before, or after, the content of an element
+       
+8)Combinator Selectors
+  A combinator is something that explains the relationship between the selectors
+  There are four different combinators in CSS:
+  -> descendant selector (space)
+  -> child selector (>) article > p { property:value; }
+  -> adjacent sibling selector (+)
+  -> general sibling selector (~)
+
+
+       
+ 
+    
+         
