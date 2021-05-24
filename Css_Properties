@@ -3,5 +3,30 @@ Properties
 2) Box sizing: The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
 3) Z-index: The z-index property specifies the stack order of an element.
          An element with greater stack order is always in front of an element with a lower stack order.
-4) Content:The content property is used with the ::before and ::after pseudo-elements, to insert generated content.     
+4) Content:The content property is used with the ::before and ::after pseudo-elements, to insert generated content.   
+
+Box Model
+-Content
+-Padding
+-Border
+-Margin
+
+
+Layout or Display Properties
+1) Float: The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
+          The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
+
+2) clear: The clear property specifies on which sides of an element floating elements are not allowed to float.
+
+3) position: The position property specifies the type of positioning method used for an element.
+    There are five different position values:
+    -> static
+    -> relative
+    -> fixed
+    -> absolute
+    -> sticky
+    Elements are then positioned using the top, bottom, left, and right properties.
+    However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+
  
